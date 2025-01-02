@@ -20,10 +20,8 @@ const projectSchema = new Schema({
   },
   description: String,
   link: {
-    type: {
-      type: String,
-    },
-    requried: [true, "please provide website link"],
+    type: String,
+    required: [true, "please provide website link"],
   },
   projectType: {
     type: String,
@@ -36,5 +34,4 @@ const projectSchema = new Schema({
 });
 
 const projectModel = new model("Project", projectSchema);
-
 module.exports = projectModel;
