@@ -22,8 +22,8 @@ const projectSchema = new Schema({
   link: {
     type: {
       type: String,
-      requried: [true, "please provide website link"],
     },
+    requried: [true, "please provide website link"],
   },
   projectType: {
     type: String,
